@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "./TimeTable.css";
 import { theme } from "../theme";
 
 const Wrapper = styled.div`
