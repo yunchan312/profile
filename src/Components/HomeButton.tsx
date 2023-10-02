@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme";
-import { motion, useScroll, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const Button = styled(motion.div)<{ bgColor: string }>`
