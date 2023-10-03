@@ -35,28 +35,19 @@ const Next = styled.button`
 `;
 
 export default function PlayLists() {
-  const [songIndex, setSongIndex] = useState(0);
+  const [songIndex, setSongIndex] = useState(1);
   const handleClickNext = () => {
-    if (songIndex === 3) {
-      setSongIndex(0);
-    } else {
-      setSongIndex((prev) => prev + 1);
-    }
+    setSongIndex((prev) => (prev + 1) % 4);
   };
-  const handleClickPrev = () => {
-    if (songIndex === 0) {
-      setSongIndex(3);
-    } else {
-      setSongIndex((prev) => prev - 1);
-    }
-  };
+
   return (
     <>
       <Wrapper>
         <Title>🎼{SongLists.title[songIndex]}</Title>
         <Player>
-          <Next onClick={handleClickPrev}>{`<<`}</Next>
+          <Next onClick={handleClickNext}>{`<<`}</Next>
           <iframe
+            key={SongLists.title[songIndex]}
             width="840"
             height="473"
             src={`${SongLists.iframe[songIndex]}`}
