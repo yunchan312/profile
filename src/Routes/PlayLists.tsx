@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { SongLists } from "../Assets/songs";
+import { useState } from "react";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -10,21 +12,59 @@ const Title = styled.div`
   font-size: 70px;
   padding: 30px;
 `;
-const Secret = styled.div`
+const Player = styled.div`
   display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
   align-items: center;
-  height: 50%;
+  margin-top: 20px;
+  :hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+`;
+const Next = styled.button`
+  height: 100px;
+  width: 100px;
+  border: 5px solid ${(props) => props.theme.white};
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  color: ${(props) => props.theme.white};
+  font-size: 50px;
 `;
 
 export default function PlayLists() {
+  const [songIndex, setSongIndex] = useState(0);
+  const handleClickNext = () => {
+    if (songIndex === 3) {
+      setSongIndex(0);
+    } else {
+      setSongIndex((prev) => prev + 1);
+    }
+  };
+  const handleClickPrev = () => {
+    if (songIndex === 0) {
+      setSongIndex(3);
+    } else {
+      setSongIndex((prev) => prev - 1);
+    }
+  };
   return (
     <>
       <Wrapper>
-        <Title>🎼What I like</Title>
-        <Secret>
-          <Title>히히 비밀</Title>
-        </Secret>
+        <Title>🎼{SongLists.title[songIndex]}</Title>
+        <Player>
+          <Next onClick={handleClickPrev}>{`<<`}</Next>
+          <iframe
+            width="840"
+            height="473"
+            src={`${SongLists.iframe[songIndex]}`}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <Next onClick={handleClickNext}>{`>>`}</Next>
+        </Player>
       </Wrapper>
     </>
   );
