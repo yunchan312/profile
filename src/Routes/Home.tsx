@@ -12,7 +12,7 @@ export default function Home() {
         <HomeButton
           navigateText="profile"
           bgColor={`${theme.tomato}`}
-          text="👨‍💻profile"
+          text="👨‍💻Profile"
           detailLists={["Name", "Age", "Brief History"]}
         />
         <HomeButton

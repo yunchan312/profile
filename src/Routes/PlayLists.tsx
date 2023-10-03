@@ -21,7 +21,7 @@ export default function PlayLists() {
   return (
     <>
       <Wrapper>
-        <Title>🎼PlayLists</Title>
+        <Title>🎼What I like</Title>
         <Secret>
           <Title>히히 비밀</Title>
         </Secret>

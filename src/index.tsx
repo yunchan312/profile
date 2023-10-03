@@ -64,7 +64,7 @@ body {
   color: black;
   line-height: 1.2;
   background-color: ${(props) => props.theme.white};
-
+  user-select: none;
   
 }
 a {

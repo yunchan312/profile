@@ -66,20 +66,21 @@ export default function Profile() {
             <DetailTitle>March 12th 2001</DetailTitle>
             <Detail>Brief History</Detail>
             <DetailTitle>
-              이매초등학교 6학년 만기졸업
+              한국외국어대학교 컴퓨터공학과 재학
               <br />
-              매송중학교 3학년 만기졸업
-              <br />
-              태원고등학교 3학년 만기졸업
-              <br />
-              한국외국어대학교 적기 입학
+              TAB 38th Member
               <br />
               육군 제5 보병사단 병장 만기전역
               <br />
-              한국외국어대학교 복학
+              UMC 5th Member (WEB)
               <br />
-              UMC 5th Member {`(WEB)`}
+              TAB WEB Study Leader
             </DetailTitle>
+            <Detail>
+              <a href="https://www.notion.so/HOME-061d51c247f34f74b3b3d68aa270011f">
+                Click to Blog
+              </a>
+            </Detail>
           </DetailContainer>
         </Main>
       </Container>
