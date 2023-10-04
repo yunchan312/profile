@@ -27,6 +27,12 @@ export default function Home() {
           text="🎼PlayLists"
           detailLists={["My Favorite Songs"]}
         />
+        <HomeButton
+          navigateText="studies"
+          bgColor={`${theme.orange.light}`}
+          text="🖥️Computer"
+          detailLists={["Coumputer Language", "WEB", "AI"]}
+        />
       </Wrapper>
     </>
   );

@@ -14,6 +14,7 @@ const Button = styled(motion.div)<{ bgColor: string }>`
   font-weight: 900;
   :hover {
     cursor: pointer;
+    scale: 1.1;
   }
 `;
 const ButtonText = styled(motion.div)`
