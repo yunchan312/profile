@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   color: ${(props) => props.theme.white};
 `;
 const Title = styled.div`
-  font-size: 70px;
+  font-size: 60px;
   padding: 30px;
 `;
 const BoxContainer = styled.div`

@@ -14,11 +14,12 @@ const Button = styled(motion.div)<{ bgColor: string }>`
   font-weight: 900;
   :hover {
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.05;
   }
 `;
 const ButtonText = styled(motion.div)`
-  font-size: 120px;
+  font-size: 100px;
+  width: 50%;
   margin-left: 100px;
   margin-top: 50px;
 `;

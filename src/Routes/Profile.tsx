@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.tomato};
+  background-color: ${(props) => props.theme.red};
   min-height: 100vh;
   color: ${(props) => props.theme.white};
   font-weight: 900;
@@ -27,7 +27,7 @@ const Photo = styled.div`
   text-align: left;
   width: 45%;
   height: 70vh;
-  color: ${(props) => props.theme.tomato};
+  color: ${(props) => props.theme.red};
   border-radius: 20px;
   display: flex;
   flex-direction: column;

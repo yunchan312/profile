@@ -11,9 +11,9 @@ export default function Home() {
       <Wrapper>
         <HomeButton
           navigateText="profile"
-          bgColor={`${theme.tomato}`}
+          bgColor={`${theme.red}`}
           text="👨‍💻Profile"
-          detailLists={["Name", "Age", "Brief History"]}
+          detailLists={["Name", "Brief History"]}
         />
         <HomeButton
           navigateText="timetable"
