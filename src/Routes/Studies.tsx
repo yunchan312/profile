@@ -1,6 +1,18 @@
 import styled from "styled-components";
 import { theme } from "../theme";
-import { Python } from "Assets/Icons";
+import {
+  Typescript,
+  HTML,
+  CSS,
+  Javascript,
+  ReactIcon,
+  IconNextjs,
+  IconReactquery,
+  IconTailwind,
+  IconFramer,
+  IconReacthookform,
+  IconStyledcomponents,
+} from "Assets/Icons";
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.orange.light};
@@ -36,17 +48,19 @@ const BoxItems = styled.div`
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 `;
 const BoxItem = styled.div`
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   margin-top: 20px;
-  width: 50%;
   padding: 10px;
 `;
 const BoxText = styled.div`
-  font-size: 25px;
-  text-align: center;
+  font-size: 20px;
+  text-align: left;
   margin-left: 10px;
 `;
 
@@ -57,16 +71,78 @@ export default function Studies() {
         <Title>🖥️Computer Science</Title>
         <BoxContainer>
           <Box>
-            <BoxTitle>🔤Computer Language</BoxTitle>
+            <BoxTitle>🌍WEB</BoxTitle>
             <BoxItems>
               <BoxItem>
-                <Python width="30" height="30" />
-                <BoxText>Python</BoxText>
+                <HTML width="30px" height="30px" />
+                <BoxText>HTML</BoxText>
+              </BoxItem>
+
+              <BoxItem>
+                <CSS width="30px" height="30px" />
+                <BoxText>CSS</BoxText>
+              </BoxItem>
+
+              <BoxItem>
+                <Typescript width="30px" height="30px" />
+                <BoxText>TypeScript</BoxText>
+              </BoxItem>
+              <BoxItem>
+                <Javascript width="30px" height="30px" />
+                <BoxText>JavaScript</BoxText>
               </BoxItem>
             </BoxItems>
           </Box>
-          <Box boxColor={theme.green}>🌍WEB</Box>
-          <Box>🪬Artificial Intelligence</Box>
+          <Box boxColor={theme.green}>
+            <BoxTitle>⛓️FrameWorkes</BoxTitle>
+            <BoxItems>
+              <BoxItem>
+                <ReactIcon width="40px" height="40px" />
+                <BoxText>React</BoxText>
+              </BoxItem>
+              <BoxItem>
+                <IconNextjs width="35px" height="35px" />
+                <BoxText>Next.Js</BoxText>
+              </BoxItem>
+            </BoxItems>
+          </Box>
+          <Box>
+            <BoxTitle>📚Libraries</BoxTitle>
+            <BoxItems>
+              <BoxItem>
+                <IconReactquery width="40px" height="40px" />
+                <BoxText>
+                  React
+                  <br />
+                  Query
+                </BoxText>
+              </BoxItem>
+              <BoxItem>
+                <IconFramer width="35px" height="35px" />
+                <BoxText>FramerMotion</BoxText>
+              </BoxItem>
+              <BoxItem>
+                <IconStyledcomponents width="35px" height="35px" />
+                <BoxText>
+                  Styled
+                  <br />
+                  Components
+                </BoxText>
+              </BoxItem>
+              <BoxItem>
+                <IconReacthookform width="35px" height="35px" />
+                <BoxText>ReactHookForm</BoxText>
+              </BoxItem>
+              <BoxItem>
+                <IconTailwind width="35px" height="35px" />
+                <BoxText>TailwindCss</BoxText>
+              </BoxItem>
+              <BoxItem>
+                <ReactIcon width="40px" height="40px" />
+                <BoxText>Recoil</BoxText>
+              </BoxItem>
+            </BoxItems>
+          </Box>
         </BoxContainer>
       </Wrapper>
     </>

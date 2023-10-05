@@ -30,7 +30,7 @@ export default function Home() {
         <HomeButton
           navigateText="studies"
           bgColor={`${theme.orange.light}`}
-          text="🖥️Computer"
+          text="🌍WEB"
           detailLists={["Coumputer Language", "WEB", "AI"]}
         />
       </Wrapper>
