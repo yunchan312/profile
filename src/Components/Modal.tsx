@@ -14,7 +14,6 @@ const ModalTitle = styled.div`
   font-size: 30px;
   padding: 50px;
 `;
-const ModalItem = styled.div``;
 
 export default function ProjectModal() {
   const isMatch: PathMatch<string> | null = useMatch("/studies/:id");
