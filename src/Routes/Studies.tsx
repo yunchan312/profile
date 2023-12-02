@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TechBox from "../Components/TechBoxContainer";
-import ProjectLists from "Components/Modal";
+import { useNavigate } from "react-router-dom";
+import ProjectModal from "../Components/Modal";
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.orange.light};
@@ -54,19 +55,32 @@ const Project = styled.div`
 `;
 
 export default function Studies() {
+  const navigate = useNavigate();
+  const projectClick = (param: string) => {
+    navigate(`/studies/${param}`);
+  };
   return (
     <>
       <Wrapper>
+        <ProjectModal />
         <Title>👨‍💻Projects</Title>
         <Container>
           <Box>
             <STitle>🧚Solo</STitle>
             <Projects>
-              <Project>Numbers!</Project>
-              <Project>Netflix_Cloning</Project>
-              <Project>NextJs_BestSeller</Project>
-              <Project>NextJs_CarrotMarket</Project>
-              <Project>Profile</Project>
+              <Project onClick={() => projectClick("numbers")}>
+                Numbers!
+              </Project>
+              <Project onClick={() => projectClick("netflix")}>
+                Netflix_Cloning
+              </Project>
+              <Project onClick={() => projectClick("bestseller")}>
+                NextJs_BestSeller
+              </Project>
+              <Project onClick={() => projectClick("carrot")}>
+                NextJs_CarrotMarket
+              </Project>
+              <Project onClick={() => projectClick("profile")}>Profile</Project>
             </Projects>
           </Box>
           <Box>

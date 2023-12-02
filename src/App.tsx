@@ -14,6 +14,7 @@ function App() {
           <Route path="/timetable" element={<TimeTable />} />
           <Route path="/playlists" element={<PlayLists />} />
           <Route path="/studies" element={<Studies />} />
+          <Route path="/studies/:id" element={<Studies />} />
         </Routes>
       </Router>
     </div>
