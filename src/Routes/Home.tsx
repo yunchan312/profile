@@ -25,7 +25,7 @@ export default function Home() {
           navigateText="playlists"
           bgColor={`${theme.green}`}
           text="🎼PlayLists"
-          detailLists={["My Favorite Songs"]}
+          detailLists={["What I listen"]}
         />
         <HomeButton
           navigateText="studies"

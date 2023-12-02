@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 const ModalItems = styled.div`
-  background-color: ${(props) => props.theme.orange.light};
+  background-color: ${(props) => props.theme.red};
 `;
 const ModalTitle = styled.div`
   font-size: 30px;
