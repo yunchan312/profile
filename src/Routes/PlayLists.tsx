@@ -35,9 +35,10 @@ const Next = styled.button`
 `;
 
 export default function PlayLists() {
-  const [songIndex, setSongIndex] = useState(1);
+  const [songIndex, setSongIndex] = useState(0);
+  const songlistlen = SongLists.title.length;
   const handleClickNext = () => {
-    setSongIndex((prev) => (prev + 1) % 4);
+    setSongIndex((prev) => (prev + 1) % songlistlen);
   };
 
   return (
